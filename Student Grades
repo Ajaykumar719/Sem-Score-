@@ -1,0 +1,52 @@
+using System;
+namespace FP
+{
+    class program
+    {
+
+        static void Main(String[] args)
+        {
+            string name, rollno;
+            double total, percentage;
+
+            Console.WriteLine("Enter Your Name");
+            name = Console.ReadLine();
+            Console.WriteLine("Enter Your Rollno");
+            rollno = Console.ReadLine();
+
+            int S1, S2, S3, S4, S5;
+            Console.WriteLine("Enter MATHS marks");
+            S1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter PHYSICS marks");
+            S2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter GRAPHICS marks");
+            S3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter PYTHON marks");
+            S4 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter PEHV marks");
+            S5 = Convert.ToInt32(Console.ReadLine());
+
+
+            total = (S1 + S2 + S3 + S4 + S5);
+            percentage = (total / 500) * 100;
+
+            Console.WriteLine("                           ");
+
+            Console.WriteLine("Name :" + name);
+            Console.WriteLine("Roll no :" + rollno);
+
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("                   1-2 SEM RESULTS                ");
+            Console.WriteLine(" MATHS    :" + S1);
+            Console.WriteLine(" PHYSICS  :" + S2);
+            Console.WriteLine(" GRAPHICS :" + S3);
+            Console.WriteLine(" PYTHON   :" + S4);
+            Console.WriteLine(" PEHV     :" + S5);
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("TOTAL   : " + total);
+            Console.WriteLine("PERCENTAGE :" + percentage + "%");
+
+
+        }
+    }
+}
